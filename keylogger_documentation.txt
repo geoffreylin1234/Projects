@@ -1,0 +1,46 @@
+--This is the documentation file for the keylogger python project--
+** keylogger is a software / hardware that records keystrokes to pass them on to third parties, potentially allowing malicious and unauthorized people to obtain sensitive data
+** OS = Operating System, hypervisor malware program = hypervisor root kit, a malicious software operates at a virtualization a layer between the hardware and operating system, able to hide files, process and activities from detection by host OS
+** Kernel = core component of an OS responsible for managing hardware resources and system operations
+
+In this file I will be noting Project Goals, Research , Planning, Development, Testing regarding the keylogger
+
+
+Project Goals>>
+
+The goal of this project is to create a keylogger that log keystrokes to learn about
+- Keyboard Events
+- Logging techniques
+- Where this vulnerability exist
+- How can one implement security features to prevent being exploited
+- Understand this threat more thoroughly
+- Can I create a keylogger that only runs on certain specific conditions
+--> when certain websites are visited (using website cookies as identifiers?)
+--> when certain input field is selected
+--> in specific time period, for specific time period
+- how would the logged data be gathered
+- where would this threat be on the risk standard ( ISO/IEC 27032 )
+- Common vulnerable points (pain points) and how can one prevent that
+
+Impact>>
+
+A keylogger would have potential impact on 2 aspects of CIA triad
+- Would be a direct attack on confidentiality
+- High possibility of potential misuse of captured data (Integrity)
+- It would not generally affect availability unless it was a part of a boarder / wider attack
+
+Common examples >>
+- A hacked email account ( high possibility of a keylogger)
+- Kernel based trojan
+- Duqu ( a malware example https://www.industrialcybersecuritypulse.com/threats-vulnerabilities/throwback-attack-duqu-one-of-the-most-skilled-mysterious-and-powerful-apt-groups/ )
+
+
+
+Keylogger functionality & exist format >>
+
+- It is often a un-obstructive background process
+- Some could take screenshots of texts that has been entered
+--> stored locally or passed online ( if locally, assume that the advisory has unauthorized access to hard drive as well)
+- a simple software basis would be a program that reads keyboard commands through background process
+- a hypervisor basis would be a keylogger  function like a virtual machine and runs independently of the OS, using a hypervisor malware program where OS remains unaffected.
+- a kernel basis would be a keylogger hiding directly in OS, gaining access to root account where keystrokes are logged. Often disguised as drivers

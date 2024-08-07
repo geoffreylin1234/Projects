@@ -18,3 +18,7 @@ General >>
 echo # windows nano function / creating a file
 echo "xxx" >> xxx # further echo option, specifying file content in "" then specifying file name in second parameter taken
 
+
+
+Python >>
+from xxx import xxx # pretty self-explanatory, importing a specific function from a libary
