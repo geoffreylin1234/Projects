@@ -1,0 +1,20 @@
+--This is a documentation file for all commands I found useful during the creation of projects--
+
+Git >>
+--> In terminal
+git pull # pulling / updating from git
+git push origin (branch-name) # for pushing to a specific branch
+git push -u origin (new-branch-name) # for pushing to a new branch on remote repo
+git checkout # switching branches in terminal
+git clone https://xxxxxx # self-explanatory cloning a git repo
+git add xxx # adding a file to git
+git commit -m "" # commiting a file to git / second parameter is commit message
+git push origin xxx # pushing commit file to git / parameter is the branch location
+
+
+
+General >>
+--> In terminal
+echo # windows nano function / creating a file
+echo "xxx" >> xxx # further echo option, specifying file content in "" then specifying file name in second parameter taken
+
